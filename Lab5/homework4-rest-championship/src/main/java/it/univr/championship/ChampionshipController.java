@@ -20,7 +20,7 @@ public class ChampionshipController {
 
 
     @GetMapping("/match/{matchId}")
-    public Optional<Match> readBook(@PathVariable("matchId") Long id) {
+    public Optional<Match> getMatch(@PathVariable("matchId") Long id) {
         return matchRepository.findById(id);
     }
 
