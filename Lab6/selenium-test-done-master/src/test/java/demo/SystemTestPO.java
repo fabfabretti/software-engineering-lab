@@ -35,11 +35,5 @@ public class SystemTestPO extends BaseTest{
         assertEquals(2,listPage.getRowsNumber());
         assertEquals("Mariano",listPage.getFirstEntryName());
         assertEquals("Ceccato",listPage.getFirstEntrySurname());
-
-
-
-
-
-
     }
 }
