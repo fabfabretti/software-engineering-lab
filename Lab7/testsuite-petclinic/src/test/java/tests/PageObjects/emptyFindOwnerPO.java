@@ -16,13 +16,17 @@ public class emptyFindOwnerPO extends PageObject{
         super(driver);
     }
 
-    public void searchPresentOwner(String lastName){
+    public OwnerFoundPO searchPresentOwner(String lastName){
         lastNameField.sendKeys(lastName);
         lastNameField.submit();
         button.submit();
+        return new OwnerFoundPO(driver);
     }
 
-    public void searchAbsentOwner(String lastName){
-
+    public OwnerNotFoundPO searchAbsentOwner(String lastName){
+        lastNameField.sendKeys(lastName);
+        lastNameField.submit();
+        button.submit();
+        return new OwnerNotFoundPO(driver);
     }
 }
