@@ -1,0 +1,15 @@
+version: '3'
+services:
+  expresscart:
+    stdin_open: true
+    tty: true
+    working_dir: /home/expressCart
+    image: dockercontainervm/expresscart:latest
+    container_name: expresscart
+    expose:
+    - 1111
+    ports:
+    - "3000:1111"
+    environment:
+    - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    entrypoint: ./run-services-docker.sh
