@@ -9,4 +9,8 @@ My code for Software Engineering lab course, a.a. 2021/22.
 * **Lab 6**: Better system testing with Page Object architecture
 * **Lab 7**: Further system testing on a full(er) application "PetClinic" and docker deployment
 * **Lab 8**: Further system testing on a full(er) application "Cloth", without using PageObject
+* **Lab 9**: Further system testing on a full(er) application "AddressBook", using PageObject
 
+
+
+_(That's all Folks!)_
